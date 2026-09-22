@@ -1,0 +1,515 @@
+* {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f8fafc;
+        font-family: Arial, sans-serif;
+        color: #1e293b;
+    }
+
+
+    /*
+|--------------------------------------------------------------------------
+| Transactions Content
+|--------------------------------------------------------------------------
+*/
+
+.transactions-content {
+
+    margin-left:
+        250px;
+
+    padding:
+        24px;
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Mobile
+|--------------------------------------------------------------------------
+*/
+
+@media (
+    max-width: 767.98px
+) {
+
+    .transactions-content {
+
+        margin-left:
+            0;
+
+        padding:
+            14px;
+
+    }
+
+}
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Container
+    |--------------------------------------------------------------------------
+    */
+
+    .transactions-container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+}
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Header
+    |--------------------------------------------------------------------------
+    */
+
+    .page-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .back-button {
+        width: 42px;
+        height: 42px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10px;
+
+        background: #ffffff;
+
+        color: #1e293b;
+
+        text-decoration: none;
+
+        font-size: 21px;
+
+        box-shadow:
+            0 2px 8px
+            rgba(0, 0, 0, 0.08);
+    }
+
+    .page-title-wrapper {
+        flex: 1;
+    }
+
+    .page-title {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .transaction-count {
+        margin: 4px 0 0;
+        color: #64748b;
+        font-size: 14px;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Add Button
+    |--------------------------------------------------------------------------
+    */
+
+    .add-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 42px;
+        height: 42px;
+
+        padding: 0 14px;
+
+        border-radius: 10px;
+
+        background: #2563eb;
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-weight: 700;
+
+        box-shadow:
+            0 3px 10px
+            rgba(37, 99, 235, 0.25);
+    }
+
+    .add-button span {
+        display: none;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Empty State
+    |--------------------------------------------------------------------------
+    */
+
+    .empty-state {
+        background: #ffffff;
+
+        border-radius: 16px;
+
+        padding: 40px 20px;
+
+        text-align: center;
+
+        box-shadow:
+            0 4px 18px
+            rgba(0, 0, 0, 0.06);
+    }
+
+    .empty-icon {
+        font-size: 42px;
+        margin-bottom: 12px;
+    }
+
+    .empty-state h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+    }
+
+    .empty-state p {
+        margin: 0 0 20px;
+        color: #64748b;
+    }
+
+    .empty-add-button {
+        display: inline-block;
+
+        padding: 12px 20px;
+
+        border-radius: 10px;
+
+        background: #2563eb;
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-weight: 700;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Mobile Transaction Cards
+    |--------------------------------------------------------------------------
+    */
+
+    .transaction-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .transaction-card {
+        background: #ffffff;
+
+        border-radius: 14px;
+
+        padding: 16px;
+
+        box-shadow:
+            0 3px 14px
+            rgba(0, 0, 0, 0.06);
+    }
+
+
+    .transaction-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 12px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .transaction-main {
+        min-width: 0;
+    }
+
+
+    .transaction-description {
+        margin: 0;
+
+        font-size: 16px;
+
+        font-weight: 700;
+
+        word-break: break-word;
+    }
+
+
+    .transaction-category {
+        margin-top: 4px;
+
+        font-size: 13px;
+
+        color: #64748b;
+    }
+
+
+    .transaction-amount {
+        white-space: nowrap;
+
+        font-size: 17px;
+
+        font-weight: 700;
+    }
+
+
+    .amount-income {
+        color: #15803d;
+    }
+
+
+    .amount-expense {
+        color: #dc2626;
+    }
+
+
+    .amount-transfer {
+        color: #2563eb;
+    }
+
+
+    .amount-adjustment {
+        color: #7c3aed;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Transaction Details
+    |--------------------------------------------------------------------------
+    */
+
+    .transaction-details {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        padding-top: 12px;
+
+        border-top:
+            1px solid #e2e8f0;
+    }
+
+
+    .detail-label {
+        display: block;
+
+        margin-bottom: 3px;
+
+        font-size: 11px;
+
+        color: #94a3b8;
+
+        text-transform: uppercase;
+
+        letter-spacing: 0.4px;
+    }
+
+
+    .detail-value {
+        font-size: 13px;
+
+        color: #334155;
+
+        word-break: break-word;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Type Badge
+    |--------------------------------------------------------------------------
+    */
+
+    .type-badge {
+        display: inline-block;
+
+        padding: 4px 8px;
+
+        border-radius: 6px;
+
+        font-size: 11px;
+
+        font-weight: 700;
+    }
+
+
+    .badge-income {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+
+    .badge-expense {
+        background: #fee2e2;
+        color: #991b1b;
+    }
+
+
+    .badge-transfer {
+        background: #dbeafe;
+        color: #1e40af;
+    }
+
+
+    .badge-adjustment {
+        background: #ede9fe;
+        color: #5b21b6;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Desktop Table
+    |--------------------------------------------------------------------------
+    */
+
+    .transaction-actions {
+        margin-top: 14px;
+        padding-top: 12px;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .desktop-table {
+        display: none;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Desktop
+    |--------------------------------------------------------------------------
+    */
+
+    @media (min-width: 768px) {
+
+        .transactions-container {
+            padding: 30px;
+        }
+
+
+        .page-title {
+            font-size: 26px;
+        }
+
+
+        .add-button {
+            padding: 0 16px;
+        }
+
+
+        .add-button span {
+            display: inline;
+            margin-left: 6px;
+        }
+
+
+        .transaction-list {
+            display: none;
+        }
+
+
+        .desktop-table {
+            display: block;
+
+            background: #ffffff;
+
+            border-radius: 16px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 4px 18px
+                rgba(0, 0, 0, 0.06);
+        }
+
+
+        table {
+            width: 100%;
+
+            border-collapse: collapse;
+        }
+
+
+        th {
+            padding: 14px 16px;
+
+            text-align: left;
+
+            background: #f8fafc;
+
+            border-bottom:
+                1px solid #e2e8f0;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            color: #64748b;
+        }
+
+
+        td {
+            padding: 15px 16px;
+
+            border-bottom:
+                1px solid #f1f5f9;
+
+            font-size: 14px;
+        }
+
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+
+        .desktop-description {
+            font-weight: 600;
+        }
+
+
+        .desktop-date {
+            white-space: nowrap;
+        }
+
+
+        .desktop-amount {
+            text-align: right;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+        }
+
+    }

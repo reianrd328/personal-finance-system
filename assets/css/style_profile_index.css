@@ -1,0 +1,518 @@
+body {
+
+        background:
+            #f8fafc;
+
+        color:
+            #1e293b;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Main Content
+    |--------------------------------------------------------------------------
+    */
+
+    .profile-content {
+
+        margin-left:
+            250px;
+
+        padding:
+            30px;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Profile Header
+    |--------------------------------------------------------------------------
+    */
+
+    .profile-header {
+
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        gap:
+            12px;
+
+        margin-bottom:
+            24px;
+
+    }
+
+
+    .back-button {
+
+        width:
+            42px;
+
+        height:
+            42px;
+
+        display:
+            inline-flex;
+
+        align-items:
+            center;
+
+        justify-content:
+            center;
+
+        border-radius:
+            10px;
+
+        background:
+            #ffffff;
+
+        color:
+            #1e293b;
+
+        text-decoration:
+            none;
+
+        font-size:
+            21px;
+
+        box-shadow:
+            0 2px 8px
+            rgba(
+                0,
+                0,
+                0,
+                0.08
+            );
+
+    }
+
+
+    .profile-title {
+
+        margin:
+            0;
+
+        font-size:
+            26px;
+
+        font-weight:
+            700;
+
+    }
+
+
+    .profile-subtitle {
+
+        margin:
+            4px 0 0;
+
+        color:
+            #64748b;
+
+        font-size:
+            14px;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Profile Card
+    |--------------------------------------------------------------------------
+    */
+
+    .profile-card {
+
+        border:
+            0;
+
+        border-radius:
+            16px;
+
+        background:
+            #ffffff;
+
+        box-shadow:
+            0 4px 18px
+            rgba(
+                0,
+                0,
+                0,
+                0.06
+            );
+
+        margin-bottom:
+            20px;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Profile Banner
+    |--------------------------------------------------------------------------
+    */
+
+    .profile-banner {
+
+        background:
+            linear-gradient(
+                135deg,
+                #198754,
+                #157347
+            );
+
+        border-radius:
+            16px 16px 0 0;
+
+        padding:
+            30px;
+
+        color:
+            white;
+
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        gap:
+            20px;
+
+    }
+
+
+    .profile-avatar {
+
+        width:
+            76px;
+
+        height:
+            76px;
+
+        min-width:
+            76px;
+
+        border-radius:
+            50%;
+
+        background:
+            rgba(
+                255,
+                255,
+                255,
+                0.2
+            );
+
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        justify-content:
+            center;
+
+        font-size:
+            34px;
+
+        border:
+            2px solid
+            rgba(
+                255,
+                255,
+                255,
+                0.5
+            );
+
+    }
+
+
+    .profile-name {
+
+        font-size:
+            24px;
+
+        font-weight:
+            700;
+
+        margin:
+            0;
+
+    }
+
+
+    .profile-username {
+
+        margin:
+            4px 0 0;
+
+        opacity:
+            0.85;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Information
+    |--------------------------------------------------------------------------
+    */
+
+    .profile-body {
+
+        padding:
+            24px;
+
+    }
+
+
+    .section-title {
+
+        font-size:
+            18px;
+
+        font-weight:
+            700;
+
+        margin-bottom:
+            18px;
+
+    }
+
+
+    .profile-info {
+
+        display:
+            grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:
+            18px;
+
+    }
+
+
+    .info-item {
+
+        padding:
+            14px;
+
+        background:
+            #f8fafc;
+
+        border-radius:
+            12px;
+
+    }
+
+
+    .info-label {
+
+        display:
+            block;
+
+        font-size:
+            11px;
+
+        text-transform:
+            uppercase;
+
+        letter-spacing:
+            0.5px;
+
+        color:
+            #94a3b8;
+
+        margin-bottom:
+            5px;
+
+    }
+
+
+    .info-value {
+
+        font-size:
+            15px;
+
+        font-weight:
+            600;
+
+        color:
+            #334155;
+
+        word-break:
+            break-word;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Badges
+    |--------------------------------------------------------------------------
+    */
+
+    .profile-badge {
+
+        display:
+            inline-block;
+
+        padding:
+            5px 10px;
+
+        border-radius:
+            7px;
+
+        font-size:
+            12px;
+
+        font-weight:
+            700;
+
+    }
+
+
+    .role-admin {
+
+        background:
+            #ede9fe;
+
+        color:
+            #6d28d9;
+
+    }
+
+
+    .role-user {
+
+        background:
+            #dbeafe;
+
+        color:
+            #1d4ed8;
+
+    }
+
+
+    .status-active {
+
+        background:
+            #dcfce7;
+
+        color:
+            #166534;
+
+    }
+
+
+    .status-inactive {
+
+        background:
+            #fee2e2;
+
+        color:
+            #991b1b;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Action Buttons
+    |--------------------------------------------------------------------------
+    */
+
+    .profile-actions {
+
+        display:
+            flex;
+
+        gap:
+            10px;
+
+        margin-top:
+            20px;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Mobile
+    |--------------------------------------------------------------------------
+    */
+
+    @media (
+        max-width: 767.98px
+    ) {
+
+        .profile-content {
+
+            margin-left:
+                0;
+
+            padding:
+                16px;
+
+        }
+
+
+        .profile-title {
+
+            font-size:
+                22px;
+
+        }
+
+
+        .profile-banner {
+
+            padding:
+                24px;
+
+        }
+
+
+        .profile-avatar {
+
+            width:
+                64px;
+
+            height:
+                64px;
+
+            min-width:
+                64px;
+
+            font-size:
+                28px;
+
+        }
+
+
+        .profile-name {
+
+            font-size:
+                20px;
+
+        }
+
+
+        .profile-info {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+    }

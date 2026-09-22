@@ -1,0 +1,227 @@
+/* =========================================
+   PERSONAL FINANCE SYSTEM
+   Global Styles
+========================================= */
+
+:root {
+
+    --primary: #198754;
+
+    --primary-dark: #146c43;
+
+    --background: #f5f7fa;
+
+    --text: #212529;
+
+    --muted: #6c757d;
+
+    --border: #dee2e6;
+
+}
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    font-size: 16px;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-family:
+        "Segoe UI",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+
+}
+
+
+/* =========================================
+   Links
+========================================= */
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+/* =========================================
+   Mobile
+========================================= */
+
+button,
+input,
+select,
+textarea {
+
+    font-size: 16px;
+
+}
+
+
+/*
+   Prevent iOS Safari from zooming into
+   small form controls.
+*/
+
+/* =========================================================
+   Mobile Header
+========================================================= */
+
+.mobile-header {
+
+    position:
+        sticky;
+
+    top:
+        0;
+
+    z-index:
+        1000;
+
+}
+
+@media (
+    max-width: 767.98px
+) {
+
+    .reports-content {
+
+        margin-left:
+            0;
+
+        padding:
+            14px;
+
+    }
+
+
+    .report-card {
+
+        border-radius:
+            12px;
+
+    }
+
+
+    /*
+    |----------------------------------------------------------------------
+    | Report Header
+    |----------------------------------------------------------------------
+    */
+
+    .reports-content h2 {
+
+        font-size:
+            24px;
+
+    }
+
+
+    /*
+    |----------------------------------------------------------------------
+    | Summary Values
+    |----------------------------------------------------------------------
+    */
+
+    .reports-content h4 {
+
+        font-size:
+            20px;
+
+    }
+
+
+    /*
+    |----------------------------------------------------------------------
+    | Net Cash Flow
+    |----------------------------------------------------------------------
+    */
+
+    .reports-content .fs-3 {
+
+        font-size:
+            26px !important;
+
+    }
+
+
+    /*
+    |----------------------------------------------------------------------
+    | Tables
+    |----------------------------------------------------------------------
+    */
+
+    .table {
+
+        min-width:
+            650px;
+
+    }
+
+
+    .table-responsive {
+
+        overflow-x:
+            auto;
+
+        -webkit-overflow-scrolling:
+            touch;
+
+    }
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Wallets Content
+|--------------------------------------------------------------------------
+*/
+
+.wallets-content {
+
+    margin-left: 250px;
+
+    padding: 24px;
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Wallets Mobile
+|--------------------------------------------------------------------------
+*/
+
+@media (
+    max-width: 767.98px
+) {
+
+    .wallets-content {
+
+        margin-left: 0;
+
+        padding: 14px;
+
+    }
+
+}
