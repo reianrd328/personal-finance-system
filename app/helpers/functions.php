@@ -78,7 +78,9 @@ function currentUser()
 
 function formatMoney($amount)
 {
-    return CURRENCY_SYMBOL .
+    $symbol = defined('APP_CURRENCY_SYMBOL') ? APP_CURRENCY_SYMBOL : '₱';
+
+    return $symbol .
         number_format(
             (float) $amount,
             2
